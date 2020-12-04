@@ -1,0 +1,41 @@
+.product-root {
+  padding: 30px 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  max-width: 30rem;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.product-root p {
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+.product-root .title {
+  font-weight: 800;
+  font-size: 1.4em;
+}
+
+.product-root .price {
+  font-weight: bold;
+  color: #FE9B10;
+}
+
+.product-root .description {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-root .styles {
+  color: #2E80CF;
+}
+
+.product-root .delivery-days {
+  font-weight: 800;
+  color: #2E80CF;
+  text-decoration: underline;
+}

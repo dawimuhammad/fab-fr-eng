@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Grid } from '@material-ui/core'
 import Product from './Product';
 
 class Contents extends Component {
@@ -14,11 +15,11 @@ class Contents extends Component {
     const { products } = this.state;
 
     return (
-      <div class="contents-root">
-      {
-        products.map(() => <Product /> )
-      }
-      </div>
+      <Grid container direction="row" justify="center" className="content-root">
+        {
+          products.map(() => <Product />)
+        }
+      </Grid>
     )
   }
 }
