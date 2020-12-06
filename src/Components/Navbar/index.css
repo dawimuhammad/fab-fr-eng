@@ -1,5 +1,13 @@
 .navbar-root {
-    padding: 0;
-    height: 100px;
-    background-color: #0E6CC7;
+  padding: 25px;
+  background-color: #0E6CC7;
+}
+
+.navbar-root .fieldbox {
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.fdeliverytime {
+  padding-left: 20px;
 }
