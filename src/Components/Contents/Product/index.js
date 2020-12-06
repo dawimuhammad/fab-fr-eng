@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core'
 import './index.css';
+import Styles from './styles';
 import { formatNumberToRupiahCurrency } from '../../../Lib'
 
 const Product = ({ product }) => {
@@ -19,16 +20,16 @@ const Product = ({ product }) => {
           <p className="description">{ description }</p>
         </Grid>
 
-        <Grid item>
-          <p className="styles">Furniture Styles</p>
+        <Grid item container direction="row" justify="flex-start">
+          <Styles furniture_style={furniture_style} />
         </Grid>
 
         <Grid item container direction="row" justify="flex-end">
-          <p className="delivery-days">Dikirim dalam { delivery_time } Hari</p>
+          <p className="delivery-days">{ delivery_time } Hari Pengiriman</p>
         </Grid>
       </Grid>
     </div>
   )
-}
+};
 
 export default Product;
