@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fab-fr-eng/static/css/main.1e16b945.chunk.css",
+    "main.js": "/fab-fr-eng/static/js/main.4812d04e.chunk.js",
+    "main.js.map": "/fab-fr-eng/static/js/main.4812d04e.chunk.js.map",
+    "runtime-main.js": "/fab-fr-eng/static/js/runtime-main.713ee005.js",
+    "runtime-main.js.map": "/fab-fr-eng/static/js/runtime-main.713ee005.js.map",
+    "static/js/2.05d2b364.chunk.js": "/fab-fr-eng/static/js/2.05d2b364.chunk.js",
+    "static/js/2.05d2b364.chunk.js.map": "/fab-fr-eng/static/js/2.05d2b364.chunk.js.map",
+    "static/js/3.e7ea5e5a.chunk.js": "/fab-fr-eng/static/js/3.e7ea5e5a.chunk.js",
+    "static/js/3.e7ea5e5a.chunk.js.map": "/fab-fr-eng/static/js/3.e7ea5e5a.chunk.js.map",
+    "index.html": "/fab-fr-eng/index.html",
+    "static/css/main.1e16b945.chunk.css.map": "/fab-fr-eng/static/css/main.1e16b945.chunk.css.map",
+    "static/js/2.05d2b364.chunk.js.LICENSE.txt": "/fab-fr-eng/static/js/2.05d2b364.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.713ee005.js",
+    "static/js/2.05d2b364.chunk.js",
+    "static/css/main.1e16b945.chunk.css",
+    "static/js/main.4812d04e.chunk.js"
+  ]
+}
