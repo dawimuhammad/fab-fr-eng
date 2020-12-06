@@ -1,7 +1,8 @@
 import { Component } from 'react';
-import { Grid, Select } from '@material-ui/core';
+import { Grid, Select, MenuItem } from '@material-ui/core';
 import { FabelioRootTextField, FabelioSelectField } from '../Shared/textfields';
-import FurnitureStyle from './FurnitureStyle';
+import FurnitureStyleSelection from './FurnitureStyle';
+import DeliveryTimeSelection from './DeliveryTime';
 import './index.css';
 
 class Navbar extends Component {
@@ -23,12 +24,13 @@ class Navbar extends Component {
           item
           container 
           xs={12}
+          spacing={3}
           direction="row" 
           justify="space-between"
         >
           <Grid 
-            xs={6}
             item 
+            xs={6}
           >
             <FabelioRootTextField 
               id="filled-search" 
@@ -41,28 +43,21 @@ class Navbar extends Component {
 
           <Grid 
             item 
-            container>
+            container 
+            spacing={3}
+          >
             <Grid 
               item 
               xs={6}
             >
-               <FurnitureStyle />
+               <FurnitureStyleSelection />
             </Grid>
 
             <Grid 
               item 
               xs={6}
             >
-               <Select
-                  fullWidth
-                  input={<FabelioSelectField />}
-                  className="fieldbox fdeliverytime"
-                  placeholder="Delivery Time"
-                >
-                  {/* <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem> */}
-                </Select>
+               <DeliveryTimeSelection />
             </Grid>
           </Grid>
         </Grid>

@@ -3,19 +3,19 @@ import { Grid, Select, MenuItem } from '@material-ui/core'
 import { FabelioSelectField, GreenCheckbox } from '../../Shared/textfields';
 import './index.css';
 
-const furnitures = [
-  "Contemporary",
-  "Mid Century",
-  "Modern",
-  "Scandinavian",
-  "Classic"
+const deliveryTime = [
+  "1 Week",
+  "2 Weeks",
+  "3 Weeks",
+  "1 Months",
+  "More than 1 Months"
 ];
 
-const FurnitureStyleSelection = () => {
-  const [furnitureStyles, setFurnitureStyles] = React.useState([]);
+const DeliveryTimeSelection = () => {
+  const [deliveryTimes, setDeliveryTimes] = React.useState([]);
   
   const handleChange = (event) => {
-    setFurnitureStyles(event.target.value);
+    setDeliveryTimes(event.target.value);
   };
 
   return (
@@ -23,13 +23,13 @@ const FurnitureStyleSelection = () => {
       fullWidth
       multiple
       input={<FabelioSelectField />}
-      value={furnitureStyles}
+      value={deliveryTimes}
       onChange={handleChange}
       renderValue={(selected) => selected.join(", ")}
       className="fieldbox"
     >
       {
-        furnitures.map((style) => {
+        deliveryTime.map((style) => {
           return (
             <MenuItem key={style} value={style}>
               <Grid 
@@ -40,7 +40,7 @@ const FurnitureStyleSelection = () => {
                 className="select-item"
               >
                 <p>{style}</p>
-                <GreenCheckbox checked={furnitureStyles.indexOf(style) > -1 } />
+                <GreenCheckbox checked={deliveryTimes.indexOf(style) > -1 } />
               </Grid>
             </MenuItem>
           )
@@ -48,6 +48,7 @@ const FurnitureStyleSelection = () => {
       }
     </Select>
   )
+
 };
 
-export default FurnitureStyleSelection;
+export default DeliveryTimeSelection;

@@ -1,16 +1,14 @@
 import { TextField, InputBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
 import Checkbox from '@material-ui/core/Checkbox';
 
 export const GreenCheckbox = withStyles({
   root: {
-    color: green[400],
+    color: '#039588',
     '&$checked': {
-      color: green[600],
+      color: '#039588',
     }
-  },
-  checked: {},
+  }
 })((props) => <Checkbox color="default" {...props} />);
 
 export const FabelioRootTextField = withStyles({
@@ -51,7 +49,7 @@ export const FabelioSelectField = withStyles((theme) => ({
     '&:focus': {
       borderRadius: 4,
       borderColor: 'ffffff'
-    },
-  },
+    }
+  }
 }))(InputBase);
 
