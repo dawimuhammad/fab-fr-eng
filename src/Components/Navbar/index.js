@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import { Grid, Select, MenuItem } from '@material-ui/core';
-import { FabelioRootTextField, FabelioSelectField } from '../Shared/textfields';
+import { Grid } from '@material-ui/core';
+import { FabelioRootTextField } from '../Shared/textfields';
 import FurnitureStyleSelection from './FurnitureStyle';
 import DeliveryTimeSelection from './DeliveryTime';
 import './index.css';
