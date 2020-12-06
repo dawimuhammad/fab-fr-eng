@@ -10,7 +10,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div class="navbar-root">
+      <div className="navbar-root">
         {/* searchbar component */}
         {/* product style options component */}
         {/* product delivery options component */}

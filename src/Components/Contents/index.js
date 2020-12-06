@@ -15,7 +15,6 @@ class Contents extends Component {
   }
 
   componentDidMount() {
-
     fetch(fetchProductUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -31,7 +30,7 @@ class Contents extends Component {
       <Grid container direction="row" justify="center" className="content-root">
         {
           (products.length) ? (
-            products.map((product) => <Product product={product}/>)
+            products.map((product, index) => <Product key={index} product={product}/>)
           ) : (<></>)
         }
       </Grid>
