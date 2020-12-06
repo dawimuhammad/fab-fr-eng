@@ -9,26 +9,27 @@ const Product = ({ product }) => {
   const priceInRupiah = price && formatNumberToRupiahCurrency(price)
 
   return (
-    <div className="product-root">
-      <Grid item container direction="row">
-        <Grid item container direction="row" justify="space-between">
-          <p className="title">{ name }</p>
-          <p className="price">{ priceInRupiah }</p>
-        </Grid>
-        
-        <Grid item xs={12}>
-          <p className="description">{ description }</p>
-        </Grid>
+    <Grid item xs={12} sm={6}>
+      <Grid container className="product-root">
 
-        <Grid item container direction="row" justify="flex-start">
-          <Styles furniture_style={furniture_style} />
-        </Grid>
-
-        <Grid item container direction="row" justify="flex-end">
-          <p className="delivery-days">{ delivery_time } Hari Pengiriman</p>
-        </Grid>
+      <Grid item container direction="row" justify="space-between">
+        <p className="title">{ name }</p>
+        <p className="price">{ priceInRupiah }</p>
       </Grid>
-    </div>
+      
+      <Grid item xs={12}>
+        <p className="description">{ description }</p>
+      </Grid>
+
+      <Grid item container direction="row" justify="flex-start">
+        <Styles furniture_style={furniture_style} />
+      </Grid>
+
+      <Grid item container direction="row" justify="flex-end">
+        <p className="delivery-days">{ delivery_time } Hari Pengiriman</p>
+      </Grid>
+      </Grid>
+    </Grid>
   )
 };
 

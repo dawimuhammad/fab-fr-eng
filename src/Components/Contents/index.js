@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Grid } from '@material-ui/core'
 import Product from './Product';
+import './index.css';
 
 const fetchProductUrl = 'http://www.mocky.io/v2/5c9105cb330000112b649af8';
 
@@ -27,7 +28,13 @@ class Contents extends Component {
     const { products } = this.state;
 
     return (
-      <Grid container direction="row" justify="center" className="content-root">
+      <Grid 
+        container 
+        spacing={3}
+        direction="row" 
+        justify="center" 
+        className="content-root" 
+      >
         {
           (products.length) ? (
             products.map((product, index) => <Product key={index} product={product}/>)

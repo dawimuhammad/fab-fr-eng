@@ -1,9 +1,7 @@
 .product-root {
-  padding: 30px 20px;
+  padding: 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  max-width: 30rem;
   border-radius: 5px;
-  margin: 20px;
 }
 
 .product-root p {
